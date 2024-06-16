@@ -1,0 +1,49 @@
+@import "src/ui/styles/functions";
+
+.header {
+    background: var(--color-components-background-contrast);
+    border-bottom: 1px solid pale-primary($color-components-stroke-neutral-pale);
+
+    &.sticky {
+        z-index: 2;
+        position: sticky;
+        top: 0;
+    }
+}
+
+.titleRow {
+    height: 80px;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: -1px;
+}
+
+.title {
+    color: var(--color-components-text-neutral);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 120%;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.backButton {
+    margin-right: 4px;
+}
+
+.titleRowActions {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.actionsRow {
+    height: 76px;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    gap: var(--padding-xl);
+}

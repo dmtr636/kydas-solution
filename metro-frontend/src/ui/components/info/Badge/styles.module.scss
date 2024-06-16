@@ -1,0 +1,55 @@
+.container {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 0;
+    right: -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-components-text-contrast, #fff);
+    text-align: center;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    z-index: 3;
+    background-color: #1d1d1f;
+
+    &.medium {
+        width: var(--badge-medium, 16px);
+        height: var(--badge-medium, 16px);
+        border-radius: var(--main-m, 12px);
+        right: -9px;
+    }
+
+    &.small {
+        width: var(--badge-small, 8px);
+        height: var(--badge-small, 8px);
+        border-radius: var(--main-m, 12px);
+        right: -1px;
+    }
+
+    &.accent {
+        background: var(--color-components-background-accent, #003ede);
+    }
+
+    &.negative {
+        background: var(--color-components-background-negative, #de1f16);
+    }
+
+    &.positive {
+        background: var(--color-components-background-positive, #109d51);
+    }
+
+    &.neutral {
+        background: var(--color-components-background-neutral, #070707);
+    }
+
+    &.contrast {
+        background: var(--color-components-background-contrast, #fff);
+        color: var(--color-components-text-neutral, #070707);
+    }
+}

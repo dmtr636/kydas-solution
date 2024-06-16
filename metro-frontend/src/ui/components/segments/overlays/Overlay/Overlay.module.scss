@@ -1,0 +1,56 @@
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: var(--color-states-primary-focus);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.card {
+    border-radius: var(--main-m);
+    border: 1px solid var(--color-components-stroke-neutral-pale);
+    background: var(--color-components-background-contrast);
+    min-width: 384px;
+    position: relative;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px 0 32px;
+    cursor: grab;
+
+    &.accent {
+        color: var(--color-components-text-accent, #003ede);
+    }
+    &.neutral {
+        color: var(--color-components-text-neutral, #070707);
+    }
+    &.negative {
+        color: var(--color-components-text-negative, #c2180f);
+    }
+}
+
+.title {
+    cursor: grab;
+    user-select: none;
+    padding: 5px;
+    margin: -5px;
+}
+
+.content {
+    margin-top: 20px;
+    padding: 0 32px 24px 32px;
+}
+
+.actions {
+    margin-top: 40px;
+    display: flex;
+    gap: 16px;
+}

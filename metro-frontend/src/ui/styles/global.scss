@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Manrope", sans-serif;
+}
+
+body {
+    color: var(--color-components-text-neutral);
+    -webkit-tap-highlight-color: transparent;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    -webkit-user-drag: none;
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    background: none;
+    user-select: none;
+}
+
+button:disabled {
+    cursor: default;
+    pointer-events: none;
+}
+
+img,
+svg {
+    display: block;
+}
+
+svg {
+    flex-shrink: 0;
+}
+
+input,
+textarea {
+    border: none;
+    outline: none;
+    background: none;
+}
+
+h5 {
+    color: var(--color-components-text-neutral-secondary);
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+h4 {
+    color: var(--color-components-text-neutral);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 120%;
+}
+
+.MuiBarElement-root:nth-child(1) {
+    fill: #ffb35d; // Replace "yourColor" with the desired color code
+}
+
+.MuiBarElement-root:nth-child(2) {
+    fill: #965326; // Replace "yourColor" with the desired color code
+}
+
+.MuiBarElement-root:nth-child(3) {
+    fill: #603d1b; // Replace "yourColor" with the desired color code
+}
+
+.MuiBarElement-root:nth-child(4) {
+    fill: #ffe898; // Replace "yourColor" with the desired color code
+}
+
+.MuiBarElement-root:nth-child(5) {
+    fill: #c1a13c; // Replace "yourColor" with the desired color code
+}
+
+.MuiBarElement-root:nth-child(6) {
+    fill: #5d641e; // Replace "yourColor" with the desired color code
+}
+
+.MuiBarElement-root:nth-child(7) {
+    fill: #bad0c4; // Replace "yourColor" with the desired color code
+}
+
+.MuiBarElement-root:nth-child(8) {
+    fill: #7caed1; // Replace "yourColor" with the desired color code
+}
+
+.MuiBarElement-root:nth-child(9) {
+    fill: #98d3f1; // Replace "yourColor" with the desired color code
+}
+
+.MuiBarElement-root:nth-child(10) {
+    fill: #94d0b3; // Replace "yourColor" with the desired color code
+}
+.MuiChartsAxis-tickLabel .MuiChartsAxis-tickLabel {
+    display: none;
+}
+.MuiChartsAxis-directionX .MuiChartsAxis-tickContainer .MuiChartsAxis-tickLabel {
+    display: none;
+}
+.MuiChartsLegend-root {
+    display: none;
+}

@@ -1,0 +1,47 @@
+@import "src/ui/styles/functions";
+
+.card {
+    width: 436px;
+    border-radius: var(--main-m);
+    border: 1px solid pale-primary($color-components-stroke-neutral-pale);
+    background: var(--color-components-background-contrast);
+    padding: 24px 32px;
+    display: flex;
+    gap: 16px;
+    position: relative;
+    margin-top: 1px;
+}
+
+.column {
+    overflow: hidden;
+}
+
+.mainInfo {
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.name {
+    color: var(--color-components-text-neutral-secondary);
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    max-width: 222px;
+}
+
+.role {
+    color: var(--color-components-text-neutral-tertiary, #9c9c9c);
+}
+
+.email {
+    margin-top: 16px;
+}
+
+.editButton {
+    position: absolute;
+    right: 32px;
+    top: 24px;
+}

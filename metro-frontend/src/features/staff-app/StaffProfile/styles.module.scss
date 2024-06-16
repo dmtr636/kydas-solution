@@ -1,0 +1,91 @@
+@import "src/ui/styles/vars";
+@import "src/ui/styles/functions";
+
+.container {
+    padding: 28px 20px;
+    background-color: #fafafa;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 16px;
+}
+
+.block {
+    display: flex;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background-color: white;
+    flex-direction: column;
+    border: 1px solid $color-components-stroke-neutral-pale;
+}
+
+.userInfoBlock {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    svg {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+.user {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.username {
+    color: var(--color-components-text-neutral, #070707);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+.usermale {
+    color: var(--color-components-text-neutral-secondary, #393939);
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+}
+
+.skills {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.button {
+    display: flex;
+    margin-top: auto;
+}
+
+.blockText {
+    color: var(--Accent, #da2031);
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.15px;
+}
+
+.blocksubText {
+    color: var(--color-components-text-neutral, #070707);
+    margin-top: 12px;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+}
+.divider {
+    height: 1px;
+    width: 100%;
+    background-color: pale-primary($color-components-stroke-neutral-pale);
+    margin: 16px 0;
+}

@@ -1,0 +1,155 @@
+@import "src/ui/styles/vars";
+@import "src/ui/styles/functions";
+
+.container {
+    width: 692px;
+    border-radius: var(--padding-m, 12px);
+    border: 1px solid var(--color-components-stroke-neutral-pale, #e6e6e6);
+    background: var(--color-components-background-contrast, #fff);
+}
+
+.header {
+    border-bottom: 1px solid var(--color-components-stroke-neutral-pale, #e6e6e6);
+    padding: 28px;
+    color: var(--color-components-text-neutral, #070707);
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+    .active {
+        color: $color-components-text-brand;
+    }
+}
+
+.stepperBlock {
+    padding: 20px 28px;
+    background: var(--color-components-background-frame, #fafafa);
+    border-bottom: 1px solid var(--color-components-stroke-neutral-pale, #e6e6e6);
+}
+
+.userInfoBlock {
+    padding: 28px;
+    padding-top: 24px;
+    border-bottom: 1px solid var(--color-components-stroke-neutral-pale, #e6e6e6);
+    display: flex;
+    gap: 40px;
+}
+
+.userInfoBlockLeft {
+    width: 314px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.userInfoBlockRight {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.userInfoBlockItem {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.userInfoBlockItemHead {
+    color: var(--color-components-text-neutral, #070707);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 19.2px */
+}
+
+.userInfoBlockItemText {
+    color: var(--Accent, #da2031);
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+}
+
+.stationsBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 28px;
+    padding-top: 24px;
+    border-bottom: 1px solid var(--color-components-stroke-neutral-pale, #e6e6e6);
+}
+
+.groupBlock {
+    display: flex;
+
+    gap: 40px;
+    padding: 28px;
+    padding-top: 24px;
+    border-bottom: 1px solid var(--color-components-stroke-neutral-pale, #e6e6e6);
+}
+
+.textarea {
+    display: flex;
+
+    width: 636px;
+    min-height: 230px;
+    height: auto;
+    resize: none;
+    overflow-y: hidden;
+    padding: 16px 20px;
+    flex-shrink: 0;
+    border: 1px solid disabled-primary($color-components-stroke-neutral-tertiary);
+    border-radius: 8px;
+    color: disabled-primary($color-components-text-neutral);
+    margin-top: 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    background-color: disabled-primary($color-components-background-neutral-pale);
+}
+
+.textAreaBlock {
+    padding: 28px;
+    padding-top: 24px;
+}
+
+.commentHead {
+    color: var(--color-components-text-neutral-secondary, #393939);
+
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 20.4px */
+}
+
+.button {
+    padding: 28px;
+    padding-top: 0;
+}
+
+.canselBlock {
+    display: flex;
+    align-items: center;
+    color: $color-components-text-brand;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 24px */
+}
+
+.canselBlockText {
+    margin-top: -30px;
+    padding-top: 30px;
+    margin-bottom: -30px;
+    padding-bottom: 30px;
+    padding-right: 28px;
+    border-right: 1px solid $color-components-stroke-neutral-pale;
+}
+.canselBlockButton {
+    padding-left: 28px;
+}

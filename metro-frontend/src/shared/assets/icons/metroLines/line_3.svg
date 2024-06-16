@@ -1,0 +1,9 @@
+<svg clip-rule="evenodd" fill-rule="evenodd" height="18" image-rendering="optimizeQuality"
+     shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 81 81" width="18"
+     xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <path d="M40 4C20 4 4 20 4 40c0 21 16 37 36 37 21 0 37-16 37-37C77 20 61 4 40 4z" fill="#fefefe"/>
+        <path d="M40 0C26 0 13 8 6 19c-4 6-6 14-6 21 0 23 18 41 40 41 23 0 41-18 41-41 0-7-2-15-6-21C68 8 55 0 40 0zM28 26v-6h26v5L44 35c6 1 12 6 12 13 0 8-8 14-16 14-6 0-12-3-15-6l5-6c3 3 6 4 9 4 5 0 8-2 8-6 0-5-4-7-8-7-2 0-3 0-4 1v-6l10-10z"
+              fill="#0572b9"/>
+    </g>
+</svg>

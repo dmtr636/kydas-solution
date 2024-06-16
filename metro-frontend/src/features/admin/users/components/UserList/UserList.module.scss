@@ -1,0 +1,10 @@
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.emptyList {
+    margin-top: -6px;
+    color: var(--color-components-text-neutral-tertiary);
+}

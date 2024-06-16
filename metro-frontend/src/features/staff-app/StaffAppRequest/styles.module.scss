@@ -1,0 +1,98 @@
+@import "src/ui/styles/vars";
+@import "src/ui/styles/functions";
+
+.datePicker {
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    white-space: nowrap;
+    height: 52px;
+    color: pale-primary($color-components-text-neutral-secondary);
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 28px;
+}
+
+.today {
+    border: 1px solid pale-primary($color-components-stroke-neutral-secondary);
+    border-right: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    color: pale-primary($color-components-text-neutral-secondary);
+    background-color: white;
+    &.active {
+        border: 1px solid $color-components-graphic-brand;
+        border-right: none;
+        color: $color-components-text-brand;
+    }
+}
+
+.divider {
+    height: 52px;
+    min-width: 1px;
+    background-color: pale-primary($color-components-stroke-neutral-secondary);
+
+    &.active {
+        background-color: $color-components-graphic-brand;
+    }
+}
+
+.tomorrow {
+    border: 1px solid pale-primary($color-components-stroke-neutral-secondary);
+    border-left: none;
+    border-right: none;
+    padding: 0 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    color: pale-primary($color-components-text-neutral-secondary);
+    background-color: white;
+    &.active {
+        border: 1px solid $color-components-graphic-brand;
+        border-left: none;
+        border-right: none;
+        color: $color-components-text-brand;
+    }
+}
+
+.lastday {
+    border: 1px solid pale-primary($color-components-stroke-neutral-secondary);
+    border-left: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    padding: 0 20px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    color: pale-primary($color-components-text-neutral-secondary);
+    background-color: white;
+    &.active {
+        border: 1px solid $color-components-graphic-brand;
+        border-left: none;
+        color: $color-components-text-brand;
+    }
+}
+
+.taskBlock {
+    margin: 0 20px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+    gap: 16px;
+}
+.container {
+    background-color: #fafafa;
+}

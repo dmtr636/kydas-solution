@@ -1,0 +1,67 @@
+.container {
+    display: flex;
+
+    width: auto;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    border-radius: 50px;
+}
+
+.content {
+    height: 100%;
+    overflow-y: auto;
+    background-color: #fafafa;
+    scrollbar-width: none; /* Для Firefox */
+    -ms-overflow-style: none; /* Для Internet Explorer 10+ */
+}
+
+.mockup {
+    background-image: url("../Google_Pixel_5.svg");
+    padding: 20px;
+    width: 421px;
+    height: 858px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    overflow: hidden;
+}
+
+.Mockupcontainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+@media screen and (max-height: 856px) {
+    .mockup {
+        height: 100%;
+        width: calc(100vh * 0.49);
+    }
+}
+
+@media screen and (max-width: 567px) {
+    .mockup {
+        height: 100%;
+        width: 100vw;
+        background-image: none;
+        padding: 0;
+        overflow: hidden;
+    }
+    .container {
+        border-radius: 0;
+        overflow: hidden;
+    }
+    .content {
+        max-height: 100%;
+    }
+    .Mockupcontainer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+}

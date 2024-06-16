@@ -1,0 +1,13 @@
+@import "src/ui/styles/functions";
+
+.card {
+    background: var(--color-components-background-contrast);
+    border-radius: var(--main-m);
+    border: 1px solid pale-primary($color-components-stroke-neutral-pale);
+    padding: 24px 32px;
+}
+
+.title {
+    color: var(--color-components-text-neutral-secondary, #202020);
+    margin-bottom: 28px;
+}

@@ -1,0 +1,157 @@
+@import "src/ui/styles/functions";
+
+.card {
+    background: var(--color-components-background-contrast);
+    border-radius: var(--main-m);
+    border: 1px solid pale-primary($color-components-stroke-neutral-pale);
+}
+
+.header {
+    padding: 28px 32px 0 32px;
+}
+
+.titleRow {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.section {
+    padding: 32px;
+    border-top: 1px solid pale-primary($color-components-stroke-neutral-pale);
+}
+
+.sectionHeader {
+    margin-bottom: 24px;
+}
+
+.infoRow {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.infoColumn {
+    display: grid;
+    gap: 20px;
+}
+
+.infoLabel {
+    color: var(--color-components-text-neutral-secondary);
+    margin-bottom: 8px;
+}
+
+.infoValue {
+    color: var(--color-components-text-accent);
+}
+
+.infoValueDescription {
+    margin-top: 8px;
+    color: var(--color-components-text-neutral-secondary, #393939);
+}
+
+.stationInfo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    .stationIcon {
+        svg {
+            width: 27px;
+            height: 20px;
+        }
+    }
+}
+
+.divider {
+    margin: -8px 0;
+    border-right: 1px solid pale-primary($color-components-stroke-neutral-pale);
+}
+
+.subgroups {
+    display: grid;
+    gap: 28px;
+}
+
+.subgroupsL {
+    display: grid;
+    gap: 36px;
+}
+
+.staffList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.staffListItem {
+    display: grid;
+    grid-template-columns: 70px auto;
+    align-items: center;
+    gap: 10px;
+    color: var(--color-components-text-neutral-secondary);
+}
+
+.source {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: end;
+}
+
+.sourceLabel {
+    color: var(--color-components-text-neutral-tertiary, #b5b5b5);
+}
+
+.routeContainer {
+    padding: 28px;
+    margin-top: 12px;
+    width: 100%;
+    border-radius: 8px;
+    background: var(--color-components-background-frame, #fafafa);
+    display: grid;
+    gap: 24px;
+}
+
+.routeRow {
+    display: flex;
+    gap: 20px;
+}
+
+.dividerHorizontal {
+    border-top: 1px solid var(--color-components-stroke-neutral-pale);
+    width: 100%;
+}
+
+.routeStation {
+    display: grid;
+    gap: 12px;
+}
+
+.routeStationFirstLine {
+    display: flex;
+    gap: 8px;
+}
+
+.routeStationSecondLine {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    &.accent {
+        color: var(--color-components-text-accent, #003ede);
+    }
+
+    svg {
+        width: 27px;
+        height: 20px;
+    }
+}
+
+.transferIcon {
+    align-self: start;
+    margin-top: 38px;
+}

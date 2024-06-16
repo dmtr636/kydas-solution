@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    max-width: 264px;
+    color: var(--color-components-text-neutral-secondary);
+
+    svg {
+        height: 20px;
+        width: auto;
+    }
+}

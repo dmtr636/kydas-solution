@@ -1,0 +1,85 @@
+@import "src/ui/styles/functions";
+
+.gantHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 656px;
+    /* padding-right: 35px;*/
+}
+
+.divider {
+    width: 1px;
+    height: 4px;
+    border-left: 1px solid $color-components-stroke-neutral-tertiary;
+}
+
+.gantHeadText {
+    color: pale-primary($color-components-text-neutral);
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.15px;
+}
+
+.gantrowContainer {
+    position: relative;
+    height: 52px;
+    overflow: hidden;
+    width: 100%;
+    margin-right: 25px;
+}
+
+.gantrowItem {
+    position: absolute;
+    top: 0;
+    height: 52px;
+    border-radius: 4px;
+    cursor: pointer;
+
+    &.workTime {
+        border: 1px solid var(--color-components-stroke-neutral-secondary, #393939);
+        background: var(--color-components-background-neutral-pale, #e6e6e6);
+
+        &:hover {
+            border: 1px solid hover-primary($color-components-stroke-neutral-secondary);
+            background: hover-primary($color-components-background-neutral-pale);
+        }
+
+        &.startWork {
+            border-right: none;
+            border-radius: 4px 0 0 4px;
+        }
+
+        &.endWork {
+            border-left: none;
+            border-radius: 0 4px 4px 0;
+        }
+    }
+
+    &.lunch {
+        border: 1px solid var(--color-components-stroke-negative-tertiary, #f8b3b0);
+        background: var(--color-components-background-negative-pale, #ffdddb);
+
+        &:hover {
+            border: 1px solid hover-primary($color-components-stroke-negative-tertiary);
+            background: hover-primary($color-components-background-negative-pale);
+        }
+    }
+
+    &.request {
+        border: 1px solid var(--color-components-stroke-accent-tertiary, #abc0f8);
+        background: var(--color-components-background-accent-pale, #dbe5ff);
+
+        &:hover {
+            border: 1px solid hover-primary($color-components-stroke-accent-tertiary);
+            background: hover-primary($color-components-background-accent-pale);
+        }
+    }
+}
+
+.position {
+    color: pale-primary($color-components-text-neutral-secondary);
+}

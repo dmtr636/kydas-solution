@@ -1,0 +1,13 @@
+.layout {
+    position: relative;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scrollbar-gutter: stable;
+}
+
+.content {
+    max-width: 1040px;
+    padding: 24px 40px;
+    display: grid;
+    gap: 16px;
+}

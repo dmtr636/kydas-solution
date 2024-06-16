@@ -1,0 +1,18 @@
+export type TypoVariant =
+    | "h1"
+    | "h2"
+    | "h3"
+    | "h4"
+    | "h5"
+    | "actionXL"
+    | "actionL"
+    | "actionM"
+    | "actionS"
+    | "actionXS"
+    | "subheadXL"
+    | "subheadL"
+    | "subheadM"
+    | "bodyXL"
+    | "bodyL"
+    | "bodyM"
+    | "bodyS";

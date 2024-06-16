@@ -1,0 +1,34 @@
+.list {
+    padding: var(--padding-s);
+
+    &.accent {
+        --local-divider-color: var(--color-components-stroke-accent-pale);
+    }
+
+    &.neutral {
+        --local-divider-color: var(--color-components-stroke-neutral-pale);
+    }
+}
+
+.divider {
+    border-top: 1px solid var(--local-divider-color);
+    margin: 8px 0;
+
+    &:last-child {
+        display: none;
+    }
+}
+
+.footer {
+    &.large {
+        padding: 15px 20px;
+    }
+
+    &.medium {
+        padding: 12px 16px;
+    }
+
+    &.noPadding {
+        padding: 0;
+    }
+}

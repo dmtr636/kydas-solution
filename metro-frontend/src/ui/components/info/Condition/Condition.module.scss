@@ -1,0 +1,17 @@
+@import "src/ui/styles/vars";
+@import "src/ui/styles/functions";
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: var(--padding-s);
+    color: pale-primary($color-components-text-neutral);
+
+    &.active {
+        color: $color-components-text-positive;
+    }
+
+    svg path {
+        fill: currentColor;
+    }
+}

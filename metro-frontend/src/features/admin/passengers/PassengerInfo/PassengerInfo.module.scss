@@ -1,0 +1,139 @@
+@import "src/ui/styles/functions";
+
+.card {
+    background: var(--color-components-background-contrast);
+    border-radius: var(--main-m);
+    border: 1px solid pale-primary($color-components-stroke-neutral-pale);
+}
+
+.header {
+    padding: 28px 32px 0 32px;
+}
+
+.titleRow {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.employeeInfoCol {
+    display: grid;
+    gap: 8px;
+}
+
+.sex {
+    color: var(--color-components-text-neutral-tertiary);
+}
+
+.status {
+    align-self: start;
+    margin-left: auto;
+}
+
+.tableFilters {
+    border-top: 1px solid pale-primary($color-components-stroke-neutral-pale);
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.params {
+    border-top: 1px solid pale-primary($color-components-stroke-neutral-pale);
+    /*display: grid;*/
+    gap: 20px;
+    padding: 32px 32px 24px;
+}
+
+.paramsText {
+    width: 532px;
+}
+
+.paramsList {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.bioInfo {
+    display: flex;
+    margin-top: 28px;
+    margin-bottom: 28px;
+}
+
+.bioInfoItem {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    border-right: 1px solid pale-primary($color-components-stroke-neutral-pale);
+    padding-left: 32px;
+
+    &:first-child {
+        padding-left: 0;
+    }
+
+    &:last-child {
+        border-right: none;
+    }
+
+    &.borderleft {
+        border-left: 1px solid pale-primary($color-components-stroke-neutral-pale);
+    }
+}
+
+.bioInfoHead {
+    color: var(--color-components-text-neutral-secondary, #393939);
+
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 20.4px */
+}
+
+.bioInfoSubHead {
+    color: var(--color-components-text-accent, #003ede);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 23.2px */
+}
+
+.bio {
+    border-bottom: 1px solid pale-primary($color-components-stroke-neutral-pale);
+    margin: 0 -32px;
+    padding: 0 32px 36px;
+}
+
+.head {
+    margin-top: 32px;
+    margin-bottom: 28px;
+}
+
+.contactArray {
+    display: flex;
+}
+.lastblock {
+    margin-top: 32px;
+}
+.textarea {
+    width: 704px;
+    margin-top: 28px;
+    margin-bottom: 12px;
+}
+.avatar {
+    width: 80px;
+    height: 80px;
+    background-color: #dbe5ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    svg {
+        width: 48px;
+        height: 48px;
+        path {
+            fill: $color-components-graphic-accent;
+        }
+    }
+}

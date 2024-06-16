@@ -1,0 +1,34 @@
+@import "src/ui/styles/functions";
+
+.container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    overflow: hidden;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    overflow: hidden;
+}
+
+.station {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.iconArrow {
+    path {
+        fill: pale-primary($color-components-graphic-accent);
+    }
+}
+
+.iconLine {
+    svg {
+        width: 27px;
+        height: 20px;
+    }
+}

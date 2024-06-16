@@ -1,0 +1,100 @@
+@import "src/ui/styles/vars";
+@import "src/ui/styles/functions";
+
+.textarea {
+    display: flex;
+    width: 100%;
+
+    resize: none;
+    overflow-y: hidden;
+    padding: 16px 20px;
+    flex-shrink: 0;
+    border: 1px solid pale-primary($color-components-stroke-neutral-tertiary);
+    border-radius: 8px;
+    color: var(--color-components-text-neutral, #070707);
+
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+
+    &::placeholder {
+        color: pale-primary($color-components-text-neutral);
+    }
+
+    &:hover {
+        border: 1px solid var(--color-components-stroke-neutral-tertiary, #b5b5b5);
+
+        &::placeholder {
+            color: pale-primary($color-components-text-neutral);
+        }
+    }
+
+    &:focus {
+        border: 1px solid $color-components-stroke-accent;
+    }
+
+    &.medium {
+        min-height: 44px;
+        font-size: 15px;
+        padding: 14px 16px;
+    }
+
+    &.large {
+        min-height: 52px;
+        font-size: 16px;
+        padding: 14px 20px;
+    }
+
+    &.readonly {
+        background: disabled-primary($color-components-background-neutral-pale);
+        border: 1px solid disabled-primary($color-components-stroke-neutral-tertiary);
+    }
+
+    &.brand {
+        &:focus {
+            border: 1px solid $color-components-stroke-brand;
+        }
+    }
+}
+
+.formName {
+    color: $color-components-text-neutral-secondary;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    padding-bottom: var(--padding-s);
+
+    &.medium {
+        font-size: 16px;
+    }
+
+    &.large {
+        font-size: 17px;
+    }
+
+    &.error {
+        color: var(--color-components-text-negative, #c2180f);
+    }
+}
+
+.formText {
+    color: $color-components-text-neutral-secondary;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    padding-top: 8px;
+
+    &.medium {
+        font-size: 15px;
+    }
+
+    &.large {
+        font-size: 16px;
+    }
+
+    &.error {
+        color: var(--color-components-text-negative, #c2180f);
+    }
+}

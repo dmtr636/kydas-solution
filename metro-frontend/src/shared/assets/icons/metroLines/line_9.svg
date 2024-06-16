@@ -1,0 +1,10 @@
+<svg clip-rule="evenodd" fill-rule="evenodd" height="18" image-rendering="optimizeQuality"
+     shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 6333 6333" width="18"
+     xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <path d="M3186 291C1594 291 311 1576 311 3169c0 1594 1283 2873 2875 2873 1593 0 2876-1279 2876-2873 0-1593-1283-2878-2876-2878z"
+              fill="#fefefe"/>
+        <path d="M3166 0C1413 0 0 1415 0 3170s1413 3163 3166 3163c1754 0 3167-1408 3167-3163S4920 0 3166 0zm-113 3737c-533 0-1066-393-1066-1081 0-661 486-1174 1226-1174 773 0 1193 613 1193 1234 0 481-193 874-706 1515l-474 608-672-67 986-1148v-21c-181 94-327 134-487 134zm133-1728c-353 0-586 273-586 607 0 314 233 601 586 601 354 0 580-287 580-601 0-334-226-607-580-607z"
+              fill="#adacac"/>
+    </g>
+</svg>

@@ -1,0 +1,87 @@
+@import "src/ui/styles/vars";
+@import "src/ui/components/controls/Button/Button.mixins";
+
+.counter {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: var(--main-m);
+    --current-padding: 10px;
+    padding: 0 var(--current-padding);
+    pointer-events: none;
+
+    &.accent {
+        @include color-types-mixin(
+            $color-components-text-contrast,
+            $color-components-text-accent,
+            $color-components-background-accent,
+            $color-components-background-contrast,
+            $color-components-stroke-accent-tertiary
+        );
+    }
+
+    &.positive {
+        @include color-types-mixin(
+            $color-components-text-contrast,
+            $color-components-text-positive,
+            $color-components-background-positive,
+            $color-components-background-contrast,
+            $color-components-stroke-positive-tertiary
+        );
+    }
+
+    &.negative {
+        @include color-types-mixin(
+            $color-components-text-contrast,
+            $color-components-text-negative,
+            $color-components-background-negative,
+            $color-components-background-contrast,
+            $color-components-stroke-negative-tertiary
+        );
+    }
+
+    &.neutral {
+        @include color-types-mixin(
+            $color-components-text-contrast,
+            $color-components-text-neutral,
+            $color-components-background-neutral,
+            $color-components-background-contrast,
+            $color-components-stroke-neutral-tertiary
+        );
+    }
+
+    &.brand {
+        @include color-types-mixin(
+            $color-components-text-contrast,
+            $color-components-text-brand,
+            $color-components-background-brand,
+            $color-components-background-contrast,
+            $color-components-stroke-brand-tertiary
+        );
+    }
+
+    &.large {
+        height: var(--counter-large);
+        min-width: var(--counter-large);
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 0.32px;
+    }
+
+    &.medium {
+        height: var(--counter-medium);
+        min-width: var(--counter-medium);
+        font-size: 15px;
+        letter-spacing: 0.15px;
+        font-weight: 600;
+    }
+
+    &.small {
+        height: var(--counter-small);
+        min-width: var(--counter-small);
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    transition: background-color 0.1s ease-out;
+}

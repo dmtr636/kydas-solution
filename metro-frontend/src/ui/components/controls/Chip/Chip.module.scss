@@ -1,0 +1,62 @@
+@import "src/ui/styles/vars";
+@import "src/ui/styles/functions";
+
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--padding-s);
+    flex-shrink: 0;
+    border-radius: var(--main-s);
+    white-space: nowrap;
+    overflow: hidden;
+    height: var(--button-medium);
+    padding: 0 calc(var(--padding-m) - 1px);
+    color: $color-components-text-neutral;
+    border: 1px solid $color-components-stroke-neutral-pale;
+
+    &:not(&.clickable) {
+        cursor: default;
+    }
+
+    &.clickable {
+        &:hover {
+            color: hover-invert($color-components-text-neutral);
+            border-color: hover-primary($color-components-stroke-neutral-tertiary);
+        }
+    }
+
+    &.selected {
+        color: $color-components-text-accent;
+        border-color: $color-components-stroke-accent-tertiary;
+
+        &:hover {
+            color: hover-invert($color-components-text-accent);
+            border-color: hover-primary($color-components-stroke-accent-tertiary);
+        }
+    }
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    .startContent {
+        display: flex;
+        align-items: center;
+        gap: var(--padding-s);
+    }
+
+    .endContent {
+        display: flex;
+        align-items: center;
+        gap: var(--padding-s);
+    }
+
+    svg {
+        path {
+            fill: currentColor;
+        }
+    }
+}

@@ -1,0 +1,84 @@
+@import "src/ui/styles/functions";
+
+.container {
+    width: 360px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 28px;
+}
+
+.checkbox {
+    margin-top: 20px;
+}
+
+.buttonsBLock {
+    margin-top: 28px;
+    display: flex;
+    gap: 20px;
+}
+
+.enterButton {
+    width: 100%;
+}
+
+.alert {
+    margin-top: 28px;
+}
+
+.logo {
+    color: var(--color-components-text-neutral, #070707);
+
+    /* Desktop/Headings/H4 */
+    font-family: Manrope;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+    /* 28.8px */
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 100%;
+    }
+}
+
+.linkButtons {
+    display: flex;
+    align-self: center;
+    gap: 8px;
+}
+
+.linkButton {
+    color: var(--color-components-text-accent);
+
+    &.selected {
+        color: var(--color-components-text-neutral);
+    }
+    &:not(.selected) {
+        &:hover {
+            color: hover-primary($color-components-text-accent);
+        }
+        &:active {
+            color: hover-primary($color-components-text-accent);
+        }
+    }
+}
+
+.divider {
+    align-self: stretch;
+    border-right: 1px solid $color-components-stroke-neutral-pale;
+}
+
+@media (max-width: 720px) {
+    .container {
+        width: 100%;
+    }
+    .linkButton {
+        display: none;
+    }
+}

@@ -1,0 +1,32 @@
+.filterContent {
+    position: relative;
+    display: grid;
+    gap: 12px;
+    padding-bottom: 100px;
+
+    .grid2Col {
+        display: grid;
+        grid-template-columns: auto 1fr;
+        row-gap: 16px;
+        column-gap: 40px;
+    }
+
+    .grid1Col {
+        display: grid;
+        row-gap: 16px;
+    }
+
+    .groups {
+        display: grid;
+        gap: 28px;
+    }
+
+    .groupHeader {
+        margin-bottom: 24px;
+        color: var(--color-components-text-neutral-secondary);
+    }
+
+    .baggageDescription {
+        margin-top: 12px;
+    }
+}

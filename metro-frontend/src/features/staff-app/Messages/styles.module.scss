@@ -1,0 +1,111 @@
+@import "src/ui/styles/vars";
+@import "src/ui/styles/functions";
+
+.today {
+    width: 50%;
+    text-align: center;
+    border: 1px solid pale-primary($color-components-stroke-neutral-secondary);
+    border-right: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: white;
+    /*
+padding: 0 20px;
+*/
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    color: pale-primary($color-components-text-neutral-secondary);
+
+    &.active {
+        border: 1px solid $color-components-graphic-brand;
+        border-right: none;
+        color: $color-components-text-brand;
+    }
+}
+
+.divider {
+    height: 52px;
+    min-width: 1px;
+    background-color: pale-primary($color-components-stroke-neutral-secondary);
+
+    &.active {
+        background-color: $color-components-graphic-brand;
+    }
+}
+
+.lastday {
+    width: 50%;
+    text-align: center;
+    border: 1px solid pale-primary($color-components-stroke-neutral-secondary);
+    border-left: none;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background-color: white;
+    /*
+padding: 0 20px;
+*/
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    color: pale-primary($color-components-text-neutral-secondary);
+
+    &.active {
+        border: 1px solid $color-components-graphic-brand;
+        border-left: none;
+        color: $color-components-text-brand;
+    }
+}
+
+.headContainer {
+    margin: 28px 20px 24px;
+    display: flex;
+    width: auto;
+}
+
+.MessagesArray {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-bottom: 100px;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.arrayIsEmpty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    height: 100%;
+    margin-top: 40%;
+
+    svg {
+        width: 48px;
+        height: 48px;
+
+        path {
+            fill: $color-components-graphic-neutral;
+        }
+    }
+}
+
+.arrayIsEmptyText {
+    color: $color-components-text-neutral-secondary;
+    text-align: center;
+
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 20.4px */
+}

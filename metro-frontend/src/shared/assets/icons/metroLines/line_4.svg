@@ -1,0 +1,9 @@
+<svg clip-rule="evenodd" fill-rule="evenodd" height="18" image-rendering="optimizeQuality"
+     shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 94 94" width="18"
+     xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <path d="M47 4C23 4 4 23 4 47s19 43 43 43 43-19 43-43S71 4 47 4z" fill="#fefefe"/>
+        <path d="M47 0C21 0 0 21 0 47s21 47 47 47 47-21 47-47S73 0 47 0zM29 60v-7l12-30h9L38 52v1h13V40h9v13h7l-3 7h-4v11h-9V60z"
+              fill="#24bcef"/>
+    </g>
+</svg>

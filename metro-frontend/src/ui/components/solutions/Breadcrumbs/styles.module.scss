@@ -1,0 +1,94 @@
+@import "src/ui/styles/vars";
+@import "src/ui/styles/functions";
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+}
+
+.crumbButton {
+    display: flex;
+    gap: 4px;
+}
+
+.crumb {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 8px;
+
+    .icon {
+        path {
+            fill: pale-primary($color-components-graphic-neutral);
+        }
+
+        svg {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    .text {
+        color: pale-primary($color-components-text-neutral);
+
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 0.32px;
+        /*margin-right: 8px;*/
+    }
+
+    &:hover {
+        .text {
+            color: hover-invert($color-components-text-neutral);
+        }
+
+        .icon {
+            path {
+                fill: hover-invert($color-components-graphic-neutral);
+            }
+        }
+    }
+
+    .active {
+        cursor: alias;
+
+        .text {
+            color: $color-components-text-accent;
+        }
+
+        .icon {
+            path {
+                fill: $color-components-graphic-accent;
+            }
+        }
+    }
+
+    &.disabled {
+        pointer-events: none;
+    }
+}
+
+.arrow {
+    path {
+        fill: pale-primary($color-components-graphic-neutral);
+    }
+}
+
+.crumb {
+    &.active {
+        cursor: default;
+
+        .text {
+            color: $color-components-text-neutral;
+            margin-right: 0;
+        }
+
+        .icon path {
+            fill: $color-components-graphic-neutral;
+        }
+    }
+}

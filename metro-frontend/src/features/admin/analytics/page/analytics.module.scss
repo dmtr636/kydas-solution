@@ -1,0 +1,106 @@
+@import "src/ui/styles/functions";
+
+.tableHead {
+    background-color: white;
+    border-radius: 12px 12px 0 0;
+    border: 1px solid pale-primary($color-components-stroke-neutral-pale);
+    background: var(--color-components-background-contrast, #fff);
+    /*padding: 24px 32px;*/
+    padding-bottom: 0;
+    padding-left: 32px;
+    padding-top: 24px;
+}
+
+.row {
+    width: 240px;
+    height: 36px;
+    border-radius: 4px;
+}
+
+.rowContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.lowRow {
+    height: 36px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.headTable {
+    display: flex;
+    gap: 40px;
+}
+
+.headlast {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-bottom: 24px;
+
+    svg {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.cub {
+    min-width: 21px;
+    height: 21px;
+    border-radius: 7px;
+}
+
+.healthItem {
+    /*max-width: 265px;*/
+    display: flex;
+    gap: 7px;
+}
+
+.healthArray {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 568px;
+}
+
+.text {
+    color: pale-primary($color-components-text-neutral);
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+
+    &.active {
+        color: $color-components-text-accent;
+    }
+}
+
+.block {
+    width: 960px;
+    border: 1px solid var(--color-components-border-neutral-pale, #e6e6e6);
+    padding: 28px 32px;
+    background-color: white;
+    margin-top: 40px;
+    border-radius: 12px;
+    margin-bottom: 100px;
+}
+
+.body {
+    display: flex;
+    gap: 20px;
+    padding-top: 28px;
+    margin-left: -32px;
+    margin-right: -32px;
+    padding-left: 32px;
+    padding-right: 32px;
+    border-top: 1px solid var(--color-components-border-neutral-pale, #e6e6e6);
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}

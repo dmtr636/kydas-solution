@@ -1,0 +1,30 @@
+@import "src/ui/styles/vars";
+@import "src/ui/styles/functions";
+
+.block {
+    padding: 20px 16px;
+    border-radius: 8px;
+    border: 1px solid $color-components-stroke-neutral-pale;
+    background-color: $color-components-background-contrast;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background-image: url("fluent_food-20-filled.svg");
+    background-repeat: no-repeat;
+    background-position: right top 5px;
+}
+
+.blockHead {
+    display: flex;
+    justify-content: space-between;
+    color: var(--color-components-text-neutral, #070707);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 19.2px */
+}
+.blockText {
+    display: flex;
+    justify-content: space-between;
+}

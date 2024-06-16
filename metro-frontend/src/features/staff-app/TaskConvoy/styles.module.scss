@@ -1,0 +1,292 @@
+@import "src/ui/styles/vars";
+@import "src/ui/styles/functions";
+
+.block {
+    padding: 20px 16px;
+    border-radius: 8px;
+    border: 1px solid var(--color-components-stroke-neutral-pale, #e6e6e6);
+    background: var(--color-components-background-contrast, #fff);
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+
+    &.complete {
+        opacity: 0.5;
+    }
+
+    &.finish {
+        background-image: url("gis_flag-finish.svg");
+        background-repeat: no-repeat;
+        background-position: top 26px right;
+    }
+}
+
+.container {
+    margin: 24px 20px 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+}
+
+.subHead {
+    color: var(--color-components-text-neutral, #070707);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 19.2px */
+}
+
+.firstStepHead {
+    display: flex;
+    justify-content: space-between;
+    color: $color-components-text-neutral;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 19.2px */
+}
+
+.stationsItem {
+    display: flex;
+    gap: 12px;
+    color: var(--color-components-text-neutral, #070707);
+    text-align: start;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%; /* 16.9px */
+    svg {
+        width: 27px;
+        height: 18px;
+    }
+}
+
+.imlate {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    padding: 16px 20px;
+    background: #fae0e2;
+    color: $color-components-text-brand;
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.15px;
+    margin-bottom: -20px;
+    margin-left: -16px;
+    margin-right: -16px;
+    border-radius: 0 0 8px 8px;
+
+    svg {
+        path {
+            fill: $color-components-graphic-brand;
+        }
+    }
+}
+
+.inbutton {
+    display: flex;
+    gap: 8px;
+    width: 100%;
+}
+
+.stations {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.stationsBody {
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+}
+
+.secondBlockHead {
+    display: flex;
+    gap: 12px;
+    color: $color-components-text-brand;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    align-items: center;
+    /* margin-bottom: 12px;*/
+    svg {
+        height: 28px;
+        min-width: 28px;
+        width: auto;
+    }
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.textHead {
+    color: var(--color-components-text-neutral, #070707);
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.15px;
+}
+
+.textName {
+    color: var(--Accent, #da2031);
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 145%; /* 23.2px */
+}
+
+.textPlace {
+    color: var(--color-components-text-neutral, #070707);
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 21px */
+}
+
+.complete {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: $color-components-background-brand;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        path {
+            fill: white;
+        }
+    }
+}
+.circleСomplete {
+    width: 52px;
+    height: 52px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        path {
+            fill: $color-components-background-brand;
+        }
+    }
+}
+
+.completeConvoy {
+    position: absolute;
+    top: 20%;
+    left: 0;
+    min-width: 100%;
+    z-index: 15;
+    display: flex;
+
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.completeConvoyContainer {
+    display: flex;
+    flex-direction: column;
+    height: 160px;
+    align-items: center;
+    position: sticky;
+    bottom: 0;
+    justify-content: center;
+    background-color: $color-components-background-brand;
+    color: white;
+    width: calc(100% + 40px);
+    gap: 16px;
+    z-index: 3;
+    margin-left: -20px;
+    margin-right: -20px;
+    svg {
+        path {
+            fill: $color-components-background-brand;
+        }
+    }
+}
+
+.completeConvoyText {
+    color: white;
+    text-align: center;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+}
+
+.canselBlock {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 16px;
+    color: var(--Accent, #da2031);
+    text-align: center;
+
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 20.4px */
+    svg {
+        width: 48px;
+        height: 48px;
+
+        path {
+            fill: $color-components-text-brand;
+        }
+    }
+}
+.dividerBlock {
+    display: flex;
+    font-size: 16px;
+    gap: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 0.32px;
+    align-items: center;
+    text-wrap: nowrap;
+}
+.horDivider {
+    height: 1px;
+    width: 100%;
+    background-color: $color-components-stroke-neutral-pale;
+}

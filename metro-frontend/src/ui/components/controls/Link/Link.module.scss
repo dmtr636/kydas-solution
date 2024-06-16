@@ -1,0 +1,69 @@
+@import "src/ui/styles/functions";
+
+.link {
+    position: relative;
+    color: var(--color-components-text-link);
+
+    &.large {
+        font-size: 16px;
+        .text {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 145%;
+        }
+        .icon {
+            width: 16px;
+            height: 16px;
+        }
+    }
+    &.small {
+        font-size: 13px;
+        .text {
+            font-size: 13px;
+            font-weight: 500;
+            line-height: 130%;
+        }
+        .icon {
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    &:hover {
+        color: hover-invert($color-components-text-link);
+        &:not(.disableVisited):visited {
+            color: hover-invert($color-components-text-link-visited);
+        }
+    }
+    &:active {
+        color: pressing-primary($color-components-text-link);
+        &:not(.disableVisited):visited {
+            color: pressing-primary($color-components-text-link-visited);
+        }
+    }
+    &:not(.disableVisited):visited {
+        color: var(--color-components-text-link-visited);
+    }
+
+    svg {
+        path {
+            fill: currentColor;
+        }
+    }
+
+    .lines {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .line {
+        display: flex;
+        align-items: center;
+        gap: 4px;
+    }
+
+    .text {
+        border-bottom: 1px solid currentColor;
+    }
+}

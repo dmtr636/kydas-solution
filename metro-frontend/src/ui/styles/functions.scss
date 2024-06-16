@@ -1,0 +1,49 @@
+@use "sass:color";
+@import "src/ui/styles/vars";
+
+@function color-state($color-base, $color-state) {
+    @if $color-base == transparent {
+        @return transparent;
+    }
+    @return mix($color-base, fade-in($color-state, 1), 100% - opacity($color-state) * 100%);
+}
+
+@function pale-primary($color) {
+    @return color-state($color, $color-states-primary-pale);
+}
+
+@function hover-primary($color) {
+    @return color-state($color, $color-states-primary-hover);
+}
+
+@function pressing-primary($color) {
+    @return color-state($color, $color-states-primary-pressing);
+}
+
+@function disabled-primary($color) {
+    @return color-state($color, $color-states-primary-disabled);
+}
+
+@function focus-primary($color) {
+    @return color-state($color, $color-states-primary-focus);
+}
+
+@function pale-invert($color) {
+    @return color-state($color, $color-states-invert-pale);
+}
+
+@function hover-invert($color) {
+    @return color-state($color, $color-states-invert-hover);
+}
+
+@function pressing-invert($color) {
+    @return color-state($color, $color-states-invert-pressing);
+}
+
+@function disabled-invert($color) {
+    @return color-state($color, $color-states-invert-disabled);
+}
+
+@function focus-invert($color) {
+    @return color-state($color, $color-states-invert-focus);
+}

@@ -1,0 +1,105 @@
+@import "src/ui/styles/vars";
+@import "src/ui/styles/functions";
+
+@mixin color-mode-vars(
+    $color-components-graphic,
+    $color-components-text,
+    $color-components-text-secondary
+) {
+    --icon-color-pale: #{pale-primary($color-components-graphic)};
+    --icon-color-checked: #{$color-components-graphic};
+    --icon-color-hover: #{hover-invert($color-components-graphic)};
+    --icon-color-pressing: #{pressing-invert($color-components-graphic)};
+    --icon-color-disabled: #{disabled-primary($color-components-graphic)};
+
+    --title-color-pale: #{pale-primary($color-components-text)};
+    --title-color-checked: #{$color-components-text};
+    --title-color-hover: #{hover-invert($color-components-text)};
+    --title-color-pressing: #{pressing-invert($color-components-text)};
+    --title-color-disabled: #{disabled-primary($color-components-text)};
+
+    --subtitle-color-pale: #{pale-primary($color-components-text-secondary)};
+    --subtitle-color-checked: #{$color-components-text-secondary};
+    --subtitle-color-hover: #{hover-invert($color-components-text-secondary)};
+    --subtitle-color-pressing: #{pressing-invert($color-components-text-secondary)};
+    --subtitle-color-disabled: #{disabled-primary($color-components-text-secondary)};
+}
+
+@mixin color-state-vars($state) {
+    --icon-color: var(--icon-color-#{$state});
+    .title {
+        color: var(--title-color-#{$state});
+    }
+    .subtitle {
+        color: var(--subtitle-color-#{$state});
+    }
+}
+
+.radioButton {
+    display: flex;
+    align-items: center;
+    gap: var(--padding-m);
+    text-align: start;
+    color: pale-primary($color-components-graphic-neutral);
+
+    &.accent {
+        @include color-mode-vars(
+            $color-components-graphic-accent,
+            $color-components-text-accent,
+            $color-components-text-accent-secondary
+        );
+    }
+
+    &.neutral {
+        @include color-mode-vars(
+            $color-components-graphic-neutral,
+            $color-components-text-neutral,
+            $color-components-text-neutral-secondary
+        );
+    }
+    &.positive {
+        @include color-mode-vars(
+            $color-components-graphic-positive,
+            $color-components-text-positive,
+            $color-components-text-neutral-secondary
+        );
+    }
+
+    &.brand {
+        @include color-mode-vars(
+            $color-components-graphic-brand,
+            $color-components-text-brand,
+            $color-components-text-brand-secondary
+        );
+    }
+
+    @include color-state-vars("pale");
+
+    &.checked,
+    &.intermediate {
+        @include color-state-vars("checked");
+    }
+
+    &:hover {
+        @include color-state-vars("hover");
+    }
+
+    &:active {
+        @include color-state-vars("pressing");
+    }
+
+    &:disabled {
+        @include color-state-vars("disabled");
+    }
+
+    svg path {
+        fill: var(--icon-color);
+    }
+}
+
+.title {
+}
+
+.subtitle {
+    margin-top: var(--padding-xxs);
+}

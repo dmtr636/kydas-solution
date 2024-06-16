@@ -1,0 +1,28 @@
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 88px;
+}
+
+.errorDescription {
+    color: var(--color-components-text-neutral-tertiary, #b5b5b5);
+}
+
+.title {
+    margin-top: 4px;
+    color: var(--color-components-text-accent, #003ede);
+}
+
+.text {
+    margin-top: 16px;
+    color: var(--color-components-text-neutral-secondary, #393939);
+    max-width: 479px;
+}
+
+.actions {
+    margin-top: 44px;
+    display: flex;
+    gap: 20px;
+}

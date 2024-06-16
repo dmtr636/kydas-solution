@@ -1,0 +1,113 @@
+@import "src/ui/styles/functions";
+
+.card {
+    background: var(--color-components-background-contrast);
+    border-radius: var(--main-m);
+    border: 1px solid pale-primary($color-components-stroke-neutral-pale);
+    margin-bottom: 100px;
+}
+
+.header {
+    padding: 28px 32px 0 32px;
+}
+
+.titleRow {
+    height: 44px;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+}
+
+.section {
+    padding: 32px;
+    border-top: 1px solid pale-primary($color-components-stroke-neutral-pale);
+}
+
+.sectionHeader {
+    margin-bottom: 24px;
+}
+
+.infoRow {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+}
+
+.infoColumn {
+    display: grid;
+    gap: 20px;
+}
+
+.infoLabel {
+    color: var(--color-components-text-neutral-secondary);
+    margin-bottom: 24px;
+}
+
+.infoValue {
+    color: var(--color-components-text-accent);
+}
+
+.stationInfo {
+    display: flex;
+    align-items: center;
+
+    .stationIcon {
+        width: 27px;
+
+        svg {
+            width: auto;
+            height: 20px;
+        }
+    }
+}
+
+.divider {
+    margin: -8px 20px;
+    border-right: 1px solid pale-primary($color-components-stroke-neutral-pale);
+}
+
+.subgroups {
+    display: grid;
+    gap: 28px;
+}
+
+.inspectorContainer {
+    width: 704px;
+    display: grid;
+    gap: 16px;
+}
+
+.inspectorsCard {
+    border-radius: var(--main-m, 12px);
+    background: var(--color-components-background-frame, #fafafa);
+}
+
+.inspectorsList {
+    display: grid;
+}
+
+.inspectorsListItem {
+    width: 100%;
+    padding: 16px 20px;
+
+    & > div {
+        width: 100%;
+    }
+}
+
+.dividerHorizontal {
+    width: 100%;
+    border-top: 1px solid var(--color-components-stroke-neutral-pale);
+    &:last-child {
+        display: none;
+    }
+}
+
+.actions {
+    margin-top: -8px;
+    padding: 16px 20px;
+    display: grid;
+    grid-template-columns: 322px 322px;
+    gap: 20px;
+}

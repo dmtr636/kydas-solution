@@ -1,0 +1,22 @@
+@import "src/ui/styles/functions";
+
+.searchRow {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.input {
+    flex-grow: 1;
+}
+
+.divider {
+    margin: 24px -32px;
+    border-top: 1px solid pale-primary($color-components-stroke-neutral-pale);
+}
+
+.filters {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}

@@ -1,0 +1,22 @@
+@import "src/ui/styles/functions";
+
+.contact {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--color-components-text-neutral-secondary, #202020);
+    user-select: text;
+
+    &:hover {
+        color: hover-invert($color-components-text-neutral-secondary);
+    }
+
+    svg path {
+        fill: currentColor;
+    }
+
+    &.disableCopy {
+        pointer-events: none;
+    }
+}

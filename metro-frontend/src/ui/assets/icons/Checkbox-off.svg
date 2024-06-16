@@ -1,0 +1,12 @@
+<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="Checkbox-off">
+<g clip-path="url(#clip0_474_2331)">
+<path id="Vector" d="M20.8 22H1.2C0.54 22 0 21.46 0 20.8V1.2C0 0.54 0.54 0 1.2 0H20.8C21.46 0 22 0.54 22 1.2V20.8C22 21.46 21.46 22 20.8 22ZM2.6 20H19.4C19.73 20 20 19.73 20 19.4V2.6C20 2.27 19.73 2 19.4 2H2.6C2.27 2 2 2.27 2 2.6V19.4C2 19.73 2.27 20 2.6 20Z" fill="#1D1D1B"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_474_2331">
+<rect width="22" height="22" fill="white"/>
+</clipPath>
+</defs>
+</svg>

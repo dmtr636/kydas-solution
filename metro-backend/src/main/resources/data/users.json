@@ -1,0 +1,38 @@
+[
+    {
+        "email": "admin-1@{domain}",
+        "password": "{password}",
+        "role": "ADMIN",
+        "name": "Тестовый администратор 1"
+    },
+    {
+        "email": "admin-2@{domain}",
+        "password": "{password}",
+        "role": "ADMIN",
+        "name": "Тестовый администратор 2"
+    },
+    {
+        "email": "specialist-1@{domain}",
+        "password": "{password}",
+        "role": "SPECIALIST",
+        "name": "Тестовый специалист 1"
+    },
+    {
+        "email": "specialist-2@{domain}",
+        "password": "{password}",
+        "role": "SPECIALIST",
+        "name": "Тестовый специалист 2"
+    },
+    {
+        "email": "operator-1@{domain}",
+        "password": "{password}",
+        "role": "OPERATOR",
+        "name": "Тестовый оператор 1"
+    },
+    {
+        "email": "operator-2@{domain}",
+        "password": "{password}",
+        "role": "OPERATOR",
+        "name": "Тестовый оператор 2"
+    }
+]

@@ -1,0 +1,121 @@
+@import "src/ui/styles/functions";
+
+.card {
+    background: var(--color-components-background-contrast);
+    border-radius: var(--main-m);
+    border: 1px solid pale-primary($color-components-stroke-neutral-pale);
+}
+
+.header {
+    padding: 28px 32px 0 32px;
+}
+
+.titleRow {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    margin-bottom: 24px;
+}
+
+.employeeInfoCol {
+    display: grid;
+    gap: 8px;
+}
+
+.fullName {
+    color: var(--color-components-text-accent, #003ede);
+}
+
+.sex {
+    color: var(--color-components-text-neutral-tertiary);
+}
+
+.status {
+    align-self: start;
+    margin-left: auto;
+}
+
+.tableFilters {
+    border-top: 1px solid pale-primary($color-components-stroke-neutral-pale);
+    padding: 24px 32px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.params {
+    border-top: 1px solid pale-primary($color-components-stroke-neutral-pale);
+    padding: 24px 32px;
+    display: grid;
+    gap: 20px;
+}
+
+.paramsText {
+    width: 532px;
+}
+
+.paramsList {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.divider {
+    margin: 12px 0;
+    align-self: stretch;
+    border-right: 1px solid pale-primary($color-components-stroke-neutral-pale);
+}
+
+.dividerHorizontal {
+    width: 100%;
+    border-top: 1px solid var(--color-components-stroke-neutral-pale);
+    &:last-child {
+        display: none;
+    }
+}
+
+.currentLocation {
+    color: var(--color-components-text-neutral-tertiary, #b5b5b5);
+}
+
+.section {
+    padding: 32px;
+    border-top: 1px solid pale-primary($color-components-stroke-neutral-pale);
+}
+
+.sectionHeader {
+    margin-bottom: 24px;
+}
+
+.infoRow {
+    display: flex;
+    align-items: stretch;
+    gap: 40px;
+}
+
+.infoColumn {
+    display: grid;
+    gap: 20px;
+}
+
+.infoLabel {
+    color: var(--color-components-text-neutral-secondary);
+    margin-bottom: 8px;
+}
+
+.infoValue {
+    color: var(--color-components-text-accent);
+}
+
+.infoValueDescription {
+    margin-top: 8px;
+    color: var(--color-components-text-neutral-secondary, #393939);
+}
+
+.dateField {
+    display: grid;
+    gap: 4px;
+}
+
+.time {
+    color: pale-primary($color-components-text-neutral-secondary);
+}

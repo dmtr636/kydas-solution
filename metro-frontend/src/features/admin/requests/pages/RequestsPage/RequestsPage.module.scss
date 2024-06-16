@@ -1,0 +1,10 @@
+@import "src/ui/styles/functions";
+
+.dateField {
+    display: grid;
+    gap: 4px;
+}
+
+.time {
+    color: pale-primary($color-components-text-neutral-secondary);
+}

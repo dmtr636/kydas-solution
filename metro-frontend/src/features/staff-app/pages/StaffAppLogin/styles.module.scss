@@ -1,0 +1,36 @@
+.container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    /* gap: 20px;*/
+    padding: 0 20px;
+}
+
+.text {
+    color: var(--color-components-text-neutral, #070707);
+    text-align: center;
+    margin-top: 20px;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 28.8px */
+}
+@media screen and (max-height: 856px) {
+    .mockup {
+        height: 100vh;
+        width: calc(100vh * 0.49);
+    }
+}
+@media screen and (max-width: 567px) {
+    .mockup {
+        height: 100vh;
+        width: 100vw;
+        background-image: none;
+        padding: 0;
+    }
+    .container {
+        border-radius: 0;
+    }
+}

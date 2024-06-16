@@ -1,0 +1,334 @@
+@import "src/ui/styles/vars";
+@import "src/ui/styles/brandVars";
+@import "./Button.mixins";
+
+.button {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: var(--padding-s);
+    flex-shrink: 0;
+    border-radius: var(--main-s);
+    font-weight: 600;
+
+    &.accent {
+        &:not(.iconVariant) {
+            background-color: var(--color-components-background-contrast);
+        }
+        @include color-types-mixin(
+            $color-components-text-contrast,
+            $color-components-text-accent,
+            $color-components-background-accent,
+            $color-components-background-accent-pale,
+            $color-components-stroke-accent-tertiary
+        );
+    }
+
+    &.positive {
+        &:not(.iconVariant) {
+            background-color: var(--color-components-background-contrast);
+        }
+        @include color-types-mixin(
+            $color-components-text-contrast,
+            $color-components-text-positive,
+            $color-components-background-positive,
+            $color-components-background-positive-pale,
+            $color-components-stroke-positive-tertiary
+        );
+    }
+
+    &.negative {
+        &:not(.iconVariant) {
+            background-color: var(--color-components-background-contrast);
+        }
+        @include color-types-mixin(
+            $color-components-text-contrast,
+            $color-components-text-negative,
+            $color-components-background-negative,
+            $color-components-background-negative-pale,
+            $color-components-stroke-negative-tertiary
+        );
+    }
+
+    &.neutral {
+        &:not(.iconVariant) {
+            background-color: var(--color-components-background-contrast);
+        }
+        @include color-types-mixin(
+            $color-components-text-contrast,
+            $color-components-text-neutral,
+            $color-components-background-neutral,
+            $color-components-background-neutral-pale,
+            $color-components-stroke-neutral-tertiary
+        );
+    }
+
+    &.neutralPale {
+        &:not(.iconVariant) {
+            background-color: var(--color-components-background-contrast);
+        }
+        @include color-types-mixin(
+            $color-components-text-contrast,
+            $color-components-text-neutral,
+            $color-components-background-neutral,
+            $color-components-background-neutral-pale,
+            $color-components-stroke-neutral-pale
+        );
+    }
+
+    &.contrast {
+        @include color-types-mixin(
+            $color-components-text-neutral,
+            $color-components-text-contrast,
+            $color-components-background-contrast,
+            $color-components-background-contrast-pale,
+            $color-components-stroke-contrast-tertiary,
+            "invert"
+        );
+    }
+
+    &.contrast.primary {
+        &.pale {
+            color: pale-invert($color-components-text-neutral);
+            background-color: pale-invert($color-components-background-contrast);
+        }
+        &:hover,
+        &.hover {
+            background-color: hover-primary($color-components-background-contrast);
+        }
+        &:active {
+            color: $color-components-text-neutral;
+            background-color: pressing-primary($color-components-background-contrast);
+        }
+        &.focused {
+            color: $color-components-text-neutral;
+            background-color: focus-primary($color-components-background-contrast);
+        }
+        &:disabled,
+        &.disabled {
+            color: disabled-invert($color-components-text-neutral);
+            background-color: disabled-invert($color-components-background-contrast);
+        }
+    }
+
+    &.brand {
+        &:not(.iconVariant) {
+            background-color: var(--color-components-background-contrast);
+        }
+        @include color-types-mixin(
+            $color-components-text-contrast,
+            $color-components-text-brand,
+            $color-components-background-brand,
+            $color-components-background-brand-pale,
+            $color-components-stroke-brand-tertiary
+        );
+    }
+
+    &.huge {
+        --current-padding: var(--padding-xl);
+        height: var(--button-huge);
+        padding: 0 var(--current-padding);
+
+        .icon {
+            width: 28px;
+            height: 28px;
+        }
+
+        &.iconVariant {
+            padding: 0;
+            .icon {
+                width: 32px;
+                height: 32px;
+            }
+        }
+
+        .loadingAnimation {
+            width: 32px;
+            height: 32px;
+        }
+    }
+
+    &.large {
+        --current-padding: var(--padding-xl);
+        height: var(--button-large);
+        padding: 0 var(--current-padding);
+        font-size: 16px;
+        letter-spacing: 0.32px;
+
+        .icon {
+            width: 24px;
+            height: 24px;
+        }
+
+        &.iconVariant {
+            padding: 0;
+            .icon {
+                width: 28px;
+                height: 28px;
+            }
+        }
+
+        .loadingAnimation {
+            width: 28px;
+            height: 28px;
+        }
+    }
+
+    &.medium {
+        --current-padding: var(--padding-l);
+        height: var(--button-medium);
+        padding: 0 var(--current-padding);
+        font-size: 15px;
+        letter-spacing: 0.15px;
+
+        .icon {
+            width: 20px;
+            height: 20px;
+        }
+
+        &.iconVariant {
+            padding: 0;
+            .icon {
+                width: 24px;
+                height: 24px;
+            }
+        }
+
+        .loadingAnimation {
+            width: 24px;
+            height: 24px;
+        }
+    }
+
+    &.small {
+        --current-padding: var(--padding-m);
+        height: var(--button-small);
+        padding: 0 var(--current-padding);
+        font-size: 13px;
+
+        .icon {
+            width: 16px;
+            height: 16px;
+        }
+
+        &.iconVariant {
+            padding: 0;
+            .icon {
+                width: 20px;
+                height: 20px;
+            }
+        }
+
+        .loadingAnimation {
+            width: 20px;
+            height: 20px;
+        }
+    }
+
+    &.tiny {
+        --current-padding: var(--padding-m);
+        height: var(--button-tiny);
+
+        &.iconVariant {
+            padding: 0;
+            .icon {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    &:not(&.clickable) {
+        pointer-events: none;
+    }
+
+    &.fullWidth {
+        width: 100%;
+    }
+
+    &.iconVariant {
+        aspect-ratio: 1;
+        border-radius: 50%;
+    }
+
+    &.listItemVariant {
+        .startContent {
+            gap: var(--padding-m);
+        }
+    }
+
+    &.alignStart {
+        justify-content: space-between;
+    }
+
+    &.edgeTop {
+        margin-top: calc(-1 * var(--current-padding) / 2);
+    }
+
+    &.edgeRight {
+        margin-right: calc(-1 * var(--current-padding) / 2);
+    }
+
+    &.edgeBottom {
+        margin-bottom: calc(-1 * var(--current-padding) / 2);
+    }
+
+    &.edgeLeft {
+        margin-left: calc(-1 * var(--current-padding) / 2);
+    }
+
+    .startContent {
+        display: flex;
+        align-items: center;
+        gap: var(--padding-s);
+        overflow: hidden;
+        transition: opacity 0.1s ease-out;
+    }
+
+    .customIconBefore {
+        width: 27px !important;
+    }
+
+    .endContent {
+        display: flex;
+        align-items: center;
+        gap: var(--padding-s);
+        transition: opacity 0.1s ease-out;
+    }
+
+    .text {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    svg:not(.customIconBefore) {
+        path:not([fill="white"]) {
+            fill: currentColor;
+        }
+    }
+
+    &.loading {
+        .startContent {
+            opacity: 0;
+        }
+        .endContent {
+            opacity: 0;
+        }
+    }
+
+    .loadingAnimation {
+        position: absolute;
+
+        svg {
+            path[stroke] {
+                stroke: currentColor;
+            }
+        }
+    }
+
+    &.withTransition {
+        transition: background-color 0.1s ease-out;
+    }
+}

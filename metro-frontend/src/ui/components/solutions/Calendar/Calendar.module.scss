@@ -1,0 +1,36 @@
+.container {
+    padding: var(--padding-m) var(--padding-l);
+    border-radius: var(--main-s, 8px);
+    border: 1px solid var(--color-components-stroke-neutral-pale, #e6e6e6);
+    background: var(--color-components-background-contrast, #fff);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.grid {
+    margin-top: 4px;
+    display: grid;
+    grid-template-columns: repeat(7, 42px);
+    row-gap: 4px;
+}
+
+.divider {
+    margin: 12px;
+    border-top: 1px solid var(--color-components-stroke-neutral-pale);
+}
+
+.timeRow {
+    margin-top: 16px;
+    padding: 0 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.timeInput {
+    width: 84px;
+}

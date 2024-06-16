@@ -1,0 +1,9 @@
+<svg clip-rule="evenodd" fill-rule="evenodd" height="18" image-rendering="optimizeQuality"
+     shape-rendering="geometricPrecision" text-rendering="geometricPrecision" viewBox="0 0 71 71" width="18"
+     xmlns="http://www.w3.org/2000/svg">
+    <g>
+        <path d="M35 3C18 3 3 18 3 35c0 18 15 32 32 32 18 0 32-14 32-32C67 18 53 3 35 3z" fill="#fefefe"/>
+        <path d="M35 0C16 0 0 16 0 35c0 20 16 36 35 36 20 0 36-16 36-36C71 16 55 0 35 0zm-9 26l-4-4c3-3 8-5 13-5 8 0 12 4 12 10 0 5-2 8-8 14l-7 6h17l-2 6H23v-5l10-9c7-7 8-9 8-11 0-3-3-5-6-5s-6 1-9 3z"
+              fill="#4baf4f"/>
+    </g>
+</svg>
