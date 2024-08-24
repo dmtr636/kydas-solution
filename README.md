@@ -2,6 +2,8 @@
 
 ![Spring](https://img.shields.io/badge/spring-%236DB33F.svg?style=for-the-badge&logo=spring&logoColor=white)
 ![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)
+![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white)
+![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white)
 
 Сервис включает в себя админ-панель для управления всеми сущностями системы, мобильное приложение инспектора, а также улучшенную версию сайта подачи заявки для пассажиров. Реализованы оптимизированные алгоритмы распределения заявок и построения маршрута.
 
